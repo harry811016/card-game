@@ -1,0 +1,122 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;   
+  }
+  .card {
+    box-sizing: border-box;
+    
+    flex: 7% 1 1;
+    height: 8vw;
+    border: 2px solid #e0e0e0;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .card img {
+    max-width: 30%;
+    align-self: center;
+  }
+  .card p {
+    margin: 3px;
+    font-size: 20px;
+  }
+  .card p:last-child {
+    transform: rotate(180deg);
+  }
+  
+  .back {
+    background: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png');
+    background-size: cover;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .black {
+    color: black;
+  }
+  
+  .paired {
+    background-color: #dae0e3;
+  }
+  
+  #header {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 85%;
+  }
+  
+  #header .title {
+    display: flex;
+    justify-content:  flex-end;
+    width: 100%;
+  }
+  
+  #header .title img {
+  max-width: 3em;
+  }
+  
+  #header .title h2 {
+  padding-left: 0.5em;
+  }
+  
+  #header .score {
+    margin: 0;
+    color: #944242;
+    font-size: large;
+    font-weight: bolder;
+  }
+  #header .tried {
+    margin-top: 0;
+    font-size: large;
+  }
+  
+  .wrong {
+    animation-name: wrongAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 5;
+  }
+  @keyframes wrongAnimation {
+    to {
+      border: 2px solid #e42e2e;
+    }
+  }
+  
+  .completed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    top: 33vh;
+    background-color: RGBA(113, 9, 9, 0.85);
+    width: 50vw;
+    padding: 50px 0;
+    margin: 0 25vw;
+    border-radius:999em;
+  }
+  .completed > p {
+    font-size: 1.5em;
+    color: #d4d8db;
+    text-align: center;
+    margin: 0;
+  }
+  .completed > p:first-child {
+    font-size: 3em;
+    font-weight: 700;
+    color: #d4d8db;
+  }
+  
+  .btn-outline-light{
+    border-radius:50em;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: x-large;
+  }
